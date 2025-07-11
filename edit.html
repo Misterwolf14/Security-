@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Modifier l’historique (protégé)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h2>Accès protégé</h2>
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" />
+    <button onclick="verifierMotDePasse()">Valider</button>
+    <div id="erreur" style="color:red;margin-top:10px;"></div>
+  </div>
+  <div class="container" id="editContainer" style="display:none;">
+    <h2>Modifier l’historique</h2>
+    <textarea id="editZone" style="height:200px;"></textarea>
+    <button onclick="sauverModification()">Enregistrer les modifications</button>
+    <a href="index_copy.html">Retour à l’historique</a>
+  </div>
+</body>
+</html>
